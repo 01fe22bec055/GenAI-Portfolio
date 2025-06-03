@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanmay Akalwadi | Gen AI Portfolio</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background-color: #0e1117;
+      font-family: 'Segoe UI', sans-serif;
+      color: #d1d5db;
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+
+    header {
+      background-color: #1f2937;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      color: #93c5fd;
+      margin: 0;
+      font-size: 32px;
+      transition: color 0.3s;
+    }
+
+    header h1:hover {
+      color: #60a5fa;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      padding: 8px 14px;
+      text-decoration: none;
+      color: #f3f4f6;
+      font-weight: 600;
+      background-color: #374151;
+      border-radius: 8px;
+      transition: all 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #2563eb;
+      color: #ffffff;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    h2 {
+      font-size: 32px;
+      color: #facc15;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .block {
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 14px;
+      margin-bottom: 30px;
+      transition: all 0.4s ease;
+    }
+
+    .block:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .block h3 {
+      color: #fbbf24;
+      margin-bottom: 10px;
+    }
+
+    .block p, .block ul {
+      font-size: 16px;
+      color: #d1d5db;
+      line-height: 1.6;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 25px;
+      position: relative;
+    }
+
+    .tags span {
+      position: relative;
+      background: #3b82f6;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 20px;
+      font-size: 15px;
+      cursor: default;
+      transition: transform 0.3s ease;
+    }
+
+    .tags span:hover {
+      transform: scale(1.05);
+    }
+
+    .tags span::after {
+      content: attr(data-description);
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      top: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #111827;
+      color: #f1f5f9;
+      padding: 8px 12px;
+      font-size: 13px;
+      border-radius: 6px;
+      width: max-content;
+      max-width: 250px;
+      white-space: normal;
+      text-align: center;
+      transition: opacity 0.3s ease;
+      z-index: 999;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .tags span:hover::after {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .interest span {
+      background: #f59e0b;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#extra">Extra</a>
+    <a href="#course">Course Project</a>
+    <a href="#projects">Other Projects</a>
+  </nav>
+</header>
+
+<section id="intro" style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #0e1117; color: #93c5fd; padding: 60px 20px; box-sizing: border-box;">
+  <div style="max-width: 300px;">
+    <img src="profile.jpg" alt="Tanmay Akalwadi" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">
+  </div>
+  <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 60px; flex-wrap: wrap; max-width: 1000px; width: 100%;">
+    <div style="text-align: left;">
+      <h1 style="font-size: 48px; margin-bottom: 10px;">Hello, I'm</h1>
+    <h1 style="font-size: 64px; font-weight: bold; color: #ffffff;">Tanmay Akalwadi</h1>
+    <h2 style="font-size: 28px; font-weight: 400; color: #cbd5e1; margin-top: 10px;">Aspiring AI/ML Engineer</h2>
+    <div style="margin-top: 30px; display: flex; gap: 20px; justify-content: start;">
+      <a href="#about" style="padding: 12px 24px; background-color: #3b82f6; color: white; border-radius: 8px; text-decoration: none; font-weight: 600;">Explore More</a>
+      <a href="#footer" style="padding: 12px 24px; background-color: #f59e0b; color: #0e1117; border-radius: 8px; text-decoration: none; font-weight: 600;">Contact Info</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="home" style="scroll-margin-top: 120px;">
+  <div class="container block">
+    <h2>Welcome to My Gen AI Portfolio</h2>
+    <p>Generative AI is reshaping the digital world by enabling machines to create content like never before. From image generation to intelligent storytelling, this portfolio showcases my academic and project work in the domain of Gen AI, using advanced tools like SDXL, Transformers, and SMPL-X.</p>
+    <p>Scroll through to learn about my skills, explore my projects, and see how I'm building real-world applications using the power of AI.</p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container block">
+    <h2>About Me</h2>
+    <p>I’m Tanmay Akalwadi, a 3rd year Electronics & Communication Engineering student. I love building things that blend AI, creativity, and 3D design. Over the past few years, I've worked on diverse projects combining machine learning, computer vision, and 3D graphics. I enjoy experimenting with emerging tools like Stable Diffusion, SMPL-X, and YOLOv5 to build applications with real-world impact. Apart from technical work, I’m also passionate about problem-solving, digital storytelling, and collaborating on innovative ideas that push the boundaries of what’s possible with technology.</p>
+    <div class="tags">
+      <span data-description="C programming basics and embedded systems">C</span>
+      <span data-description="Object-oriented programming for system-level development">C++</span>
+      <span data-description="Widely-used general purpose and backend language">Java</span>
+      <span data-description="Flexible language ideal for AI/ML scripting and automation">Python</span>
+      <span data-description="Torch-based deep learning framework">PyTorch</span>
+      <span data-description="Google's machine learning library for scalable models">TensorFlow</span>
+      <span data-description="Game engine for interactive 2D/3D applications">Unity</span>
+      <span data-description="AAA-grade game and real-time rendering engine">Unreal Engine</span>
+      <span data-description="Languages used for building the structure and style of websites">HTML/CSS</span>
+      <span data-description="Tool for containerizing and deploying apps consistently">Docker</span>
+      <span data-description="Collaborative platform for hosting and version-controlling code">GitHub</span>
+      <span data-description="Hardware prototyping board for real-world electronics projects">Arduino</span>
+    </div>
+    <div class="tags interest">
+      <span data-description="Field of AI that creates content like images, audio, and code">Generative AI</span>
+      <span data-description="Techniques for modeling digital objects in 3D space">3D Modelling</span>
+      <span data-description="Algorithms that help systems learn from data">Machine Learning</span>
+      <span data-description="Design and development of engaging and interactive video games">Game Development</span>
+    </div>
+  </div>
+</section>
+
+<section id="extra">
+  <div class="container block">
+    <h2>Extra Page</h2>
+    <p>This section is reserved for solving specific questions assigned by my professor. I will update it regularly with challenges, answers, and insights gained while working on them. It reflects both the practical application of Gen AI concepts and my thought process as I tackle these academic prompts.</p>
+  </div>
+</section>
+
+<section id="course">
+  <div class="container block">
+    <h2>Course Project: SDXL Image Generator</h2>
+    <p>This project is a customized image generator built using Stable Diffusion XL (SDXL Base 1.0). It allows users to input text prompts and get stylistically personalized images. Training involved LoRA and DreamBooth techniques on a local dataset. Frontend was integrated using Gradio and evaluation tracked using Weights & Biases.</p>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2>Other Projects</h2>
+    <div class="block">
+      <h3>Road Damage Detection using YOLO</h3>
+      <p>Developed a YOLOv5-based system to detect and classify road damage types like potholes, cracks, and rutting using real-world datasets. It can assist in predictive maintenance and smart city infrastructure planning.</p>
+    </div>
+    <div class="block">
+      <h3>3D Avatar Deformation using SMPL-X</h3>
+      <p>Built a simulation pipeline that uses the SMPL-X model to create natural human avatar movements by interpreting body pose and shape. Integrated it with Blender for real-time rendering.</p>
+    </div>
+    <div class="block">
+      <h3>3D Model Relighting using Transformers</h3>
+      <p>Created a transformer-based solution for dynamically relighting 3D models under different virtual environments. Improves realism for games and virtual production.</p>
+    </div>
+  </div>
+</section>
+
+<footer id="footer" style="background-color:#1f2937; color:#d1d5db; text-align:center; padding:40px 20px;">
+  <h2 style="color:#facc15; margin-bottom:20px;">Contact Me</h2>
+  <p>Email: <a href="mailto:tanmayhema@gmail.com" style="color:#93c5fd; text-decoration:none;">tanmayhema@gmail.com</a></p>
+  <p>Phone: <a href="tel:+918296881023" style="color:#93c5fd; text-decoration:none;">+91 8296881023</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/tanmay-akalwadi-5aa053226/" target="_blank" style="color:#93c5fd; text-decoration:none;">linkedin.com/in/tanmayakalwadi</a></p>
+<p style="margin-top: 30px; font-size: 14px; color: #9ca3af;">&copy; 2025 Tanmay Akalwadi. All rights reserved.</p>
+</footer>
+
+<button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" title="Go to top" style="position: fixed; bottom: 30px; right: 30px; background-color: #3b82f6; color: white; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 22px; cursor: pointer; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">↑</button>
